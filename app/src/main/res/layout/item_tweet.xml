@@ -7,8 +7,8 @@
 
     <ImageView
         android:id="@+id/ivProfileImage"
-        android:layout_width="74dp"
-        android:layout_height="82dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
         android:layout_margin="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -38,5 +38,19 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constrainedWidth="true"
         tools:text="This is a really really really really really really really long tweet to text in our layout!" />
+
+    <TextView
+        android:id="@+id/tvCreatedAt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:textSize="15sp"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintBottom_toTopOf="@+id/tvTweetBody"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="5.0"
+        app:layout_constraintStart_toEndOf="@+id/tvUsername"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="8m" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

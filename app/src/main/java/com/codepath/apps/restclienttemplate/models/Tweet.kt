@@ -1,5 +1,6 @@
 package com.codepath.apps.restclienttemplate.models
 
+import com.codepath.apps.restclienttemplate.TimeFormatter
 import org.json.JSONArray
 import org.json.JSONObject
 
@@ -19,6 +20,7 @@ class Tweet
             tweet.createdAt = jsonObject.getString("created_at")
             tweet.user = User.fromJson(jsonObject.getJSONObject("user"))
 
+            TimeFormatter.getTimeDifference(tweet.createdAt)
             return tweet
         }
 
