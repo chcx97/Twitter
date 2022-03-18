@@ -23,11 +23,13 @@ class TweetsAdapter (val tweets: ArrayList<Tweet>) : RecyclerView.Adapter<Tweets
     override fun onBindViewHolder(holder: TweetsAdapter.ViewHolder, position: Int) {
         // Get the data model based on the position
         val tweet: Tweet = tweets.get(position)
-
+        var newTime = TimeFormatter.getTimeDifference((tweet.createdAt))
         // Set item views based on views and data model
         holder.tvUsername.text = tweet.user?.name
         holder.tvTweetBody.text = tweet.body
-        holder.tvCreatedAt.text = TimeFormatter.getTimeStamp(tweet.createdAt)
+        holder.tvTimeStamp.text = tweet.createdAt
+        holder.tvTimeStamp.text = newTime
+
         Glide.with(holder.itemView).load(tweet.user?.publicImageUrl).into(holder.ivProfileImage)
     }
 
@@ -52,7 +54,6 @@ class TweetsAdapter (val tweets: ArrayList<Tweet>) : RecyclerView.Adapter<Tweets
         val ivProfileImage = itemView.findViewById<ImageView>(R.id.ivProfileImage)
         val tvUsername = itemView.findViewById<TextView>(R.id.tvUsername)
         val tvTweetBody = itemView.findViewById<TextView>(R.id.tvTweetBody)
-        val tvCreatedAt = itemView.findViewById<TextView>(R.id.tvCreatedAt)
+        var tvTimeStamp = itemView.findViewById<TextView>(R.id.tvTimeStamp)
     }
-
 }

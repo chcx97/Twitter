@@ -40,7 +40,7 @@
         tools:text="This is a really really really really really really really long tweet to text in our layout!" />
 
     <TextView
-        android:id="@+id/tvCreatedAt"
+        android:id="@+id/tvTimeStamp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
