@@ -38,8 +38,7 @@ Here's a walkthrough of implemented user stories:
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
-
-Describe any challenges encountered while building the app.
+Some of the biggest challenges that I encountered was implementing the refresher. Initially, I did not implement the method correctly, but with the help of my TA Emon, he helped me figure out how to properly implement the method and get the appropiate results.
 
 ## Open-source libraries used
 
