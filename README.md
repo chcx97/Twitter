@@ -1,6 +1,6 @@
-# Project 2 - *Simple Tweet*
+# Project 2 - *Twitter*
 
-**Simple Tweet** is an android app that allows a user to view his Twitter timeline. The app utilizes [Twitter REST API](https://dev.twitter.com/rest/public).
+**Twitter** is an android app that allows a user to view his Twitter timeline. The app utilizes [Twitter REST API](https://dev.twitter.com/rest/public).
 
 Time spent: **10 hours spent in total
 
@@ -8,11 +8,11 @@ Time spent: **10 hours spent in total
 
 The following **required** functionality is completed:
 
-- [x]User can **sign in to Twitter** using OAuth login
-- [x]User can **view tweets from their home timeline**
+- [x] User can **sign in to Twitter** using OAuth login
+- [x] User can **view tweets from their home timeline**
 - [x] User is displayed the username, name, and body for each tweet
-- [ ] User is displayed the [relative timestamp](https://gist.github.com/nesquena/f786232f5ef72f6e10a7) for each tweet "8m", "7h"
-- [ ] User can refresh tweets timeline by pulling down to refresh
+- [x] User is displayed the [relative timestamp](https://gist.github.com/nesquena/f786232f5ef72f6e10a7) for each tweet "8m", "7h"
+- [x] User can refresh tweets timeline by pulling down to refresh
 
 The following **optional** features are implemented:
 
@@ -33,13 +33,12 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='walkthrough_tweet.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
-
-Describe any challenges encountered while building the app.
+Some of the biggest challenges that I encountered was implementing the refresher. Initially, I did not implement the method correctly, but with the help of my TA Emon, he helped me figure out how to properly implement the method and get the appropiate results.
 
 ## Open-source libraries used
 
