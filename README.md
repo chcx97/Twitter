@@ -42,7 +42,7 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
 
-The most challenging part in this project was trying to implement the count for the character value. At first, I did not know how to implement the method addTextChangedListener and even placed the entire function in the wrong section of the activity file. I eventually figured out how to implement the functions after looking over various sources online of how to implement the functions.
+The most challenging part in this project was trying to implement the count for the character value. At first, I did not know how to implement the method addTextChangedListener and even placed the entire function in the wrong section of the activity file. I eventually figured out how to implement the functions after looking over various sources online.
 
 ## Open-source libraries used
 
